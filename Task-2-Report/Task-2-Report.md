@@ -41,6 +41,12 @@ The `APP_MESSAGE` environment variable was successfully passed to the container 
 
 ![Environment Variable Test](Evidence/03-Environment-Variable-Test.png)
 
+### 2.1 Multi-Dependency Docker Verification
+
+The Docker image was verified to successfully load the `python-dotenv` dependency inside the container.
+
+![Multi-Dependency Docker Verification](Evidence/07-Multi-Dependency-Docker-Verification.png)
+
 ### 3. Port Mapping Test
 
 The container was successfully mapped from host port `5002` to container port `5000`.
