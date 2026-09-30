@@ -7,9 +7,14 @@ load_dotenv()
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def home():
-    return os.getenv("APP_MESSAGE", "Application Containerization Project is running!")
+    return os.getenv(
+        "APP_MESSAGE",
+        "Application Containerization Project is running!",
+    )
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
